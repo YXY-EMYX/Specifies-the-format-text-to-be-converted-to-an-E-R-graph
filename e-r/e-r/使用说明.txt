@@ -1,0 +1,36 @@
+安装上面的安装程序，然后配置环境变量path，添加Graphviz\bin,即安装软件的bin目录，记得设置字体和图片尺寸，想要有方向箭头改dir属性就行，指定格式下面有参考
+
+示例：
+
+input_text = """
+Entity: Student
+Attribute: Student.Name
+Attribute: Student.Age
+
+Entity: Course
+Attribute: Course.Name
+Attribute: Course.Credits
+
+Relationship: Enroll
+Type: 1,1
+Connect: Student Enroll Course
+"""
+
+
+实体: 员工
+属性: 员工.员工编号
+属性: 员工.员工姓名
+属性: 员工.性别
+属性: 员工.出生日期
+属性: 员工.身份证号
+属性: 员工.所在部门编号
+
+实体: 部门
+属性: 部门.部门编号
+属性: 部门.部门名称
+属性: 部门.部门描述
+属性: 部门.上级部门编号
+
+关系: 任职
+类型: M,N
+连接: 员工 任职 部门
